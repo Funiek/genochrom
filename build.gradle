@@ -10,8 +10,19 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.eclipse.collections:eclipse-collections:11.1.0'
+    implementation 'org.eclipse.collections:eclipse-collections-api:11.1.0'
+
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.30'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+
 }
 
 test {
